@@ -24,7 +24,13 @@ do
 done
 
 # until loop
-
+counter_until=0
+until [ $counter_until -lt 10 ]
+do
+	
+	echo $counter_until
+	let counter_until=counter_until+1
+done
 
 # if loop
 
